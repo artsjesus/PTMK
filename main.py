@@ -1,13 +1,5 @@
-import os
-import datetime
-import random
-import string
-import time
-from sqlalchemy import Column, Integer, String, Date, Index
-from sqlalchemy.orm import sessionmaker, declarative_base
 from db_connection import DatabaseManager
 from unit import create_employee, show_all_employees, fill_database, search_males_with_f_surname
-from employee import Employee
 
 
 def main():

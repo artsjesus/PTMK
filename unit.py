@@ -5,7 +5,6 @@ import time
 from employee import Employee
 
 
-
 def create_employee(db_manager, full_name, birth_date, gender):
     birth_date = datetime.datetime.strptime(birth_date, '%Y-%m-%d').date()
     employee = Employee(full_name=full_name, birth_date=birth_date, gender=gender)
