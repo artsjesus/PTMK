@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker
 
 
 class DatabaseManager:
-    def __init__(self, db_url='postgresql://postgres:8921@localhost/shtuka'):
+    def __init__(self, db_url='postgresql://postgres:password@localhost/namebd'):
         self.engine = create_engine(db_url)
         self.Session = sessionmaker(bind=self.engine)
         self.session = self.Session()
